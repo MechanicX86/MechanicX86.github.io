@@ -4,13 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content= "width=device-width, initial-scale=1.0">
         <title>Mechanic</title>
-        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&ampdisplay=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Geist+Pixel" rel="stylesheet">
         <style>
         body {
             margin: 0;
-            padding: 30px;
+            padding: 10px 400px;
             color: #111;
-            background: #fff;
+            background: #EFE4B0;
+            font-family: 'Geist Pixel', monospace;
         }
         .page {
             max-width: 900px;
@@ -25,30 +27,27 @@
         }
         
         header h1 {
-            font-size: 32px;
+            font-size: 48px;
             margin: 0;
-        }
-        
-        header img {
-            width: 24px;
-            height: 24px;
         }
         
         
         nav{
             display: flex;
-            border: 1px solid #111;
+            border-bottom: 2px solid #111;
             border-top: none;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            background: #fff;
         }
         
         nav a{
             flex: 1;
             text-align: center;
-            padding: 8px;
+            /*padding: 2px;*/
             text-decoration: none;
             color: #111;
-            border-right: 1px solid #111;
+            border-right: 2px solid #111;
+            
         }
         
         nav a:last-child{
@@ -56,12 +55,14 @@
         }
         
         main{
-            border: 1px solid #111;
+            border: 2px solid #111;
             padding: 20px;
+            background: #fff;
+            
         }
         
         h2 {
-            font-size: 20px;
+            font-size: 24px;
             margin-top: 0;
         }
         
@@ -72,19 +73,28 @@
         }
         
         .image-box{
-            width: 180px;
-            height: 120px;
-            border: 1px solid #111;
+            width: 380px;
+            height: 240px;
+            /*border: 1px solid #111;*/
             flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #555;
+            overflow: hidden;
         }
         
-        p {
-            color: #111;
-            line-height: 1.5;
+        .image-box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .intro p {
+            flex: 1;
+            min-width: 0;
+            overflow-wrap: break-word;
+            align-items: center
         }
         </style>
     </head>
@@ -93,24 +103,25 @@
         
     <header>
         <h1>MechanicX86</h1>
-        <img src="gear.png" alt="gear">
     </header>
         
         <nav>
-            <a href="#about">about me</a>
+            <a href="#main">main</a>
             <a href="#projects">projects</a>
             <a href="#communication">communication</a>
-            <a href="#now">now</a>
+            <a href="#news">news</a>
         </nav>
         
         <main>
             <h2>Welcome to site!</h2>
             <div class="intro">
-            <div class="image-box">image</div>
-            <p>Text. Bla-bla-bla</p>
-        </div>
+            <div class="image-box">
+                <img src="https://images.steamusercontent.com/ugc/631979381903244028/7DEE67D6E688B92D408498AFDEEF4622671504D0/?imw=5000&ampimh=5000&ampima=fit&ampimpolicy=Letterbox&ampimcolor=%23000000&ampletterbox=false" alt="maingif">
+            </div>
+            <p>&emsp;&emsp;&emsp;&emsp;Hello everyone! You've landed on the site of a person going by "MechanicX86". I'll do my best to answer any questions you might have right here.</p>
         
-        <p>Text: bla-bla</p>
+        </div>
+        <p> <br><br>&emsp;&emsp;&emsp;&emsp;Who am I?<br>&emsp;&emsp;&emsp;&emsp; I'm a systems programmer aiming to become a true professional in my field. Unfortunately, I can't be more specific just yet — I haven't decided whether my path will be vulnerability research, reverse engineering, or something else entirely. That said, I'm studying low-level programming languages, with a particular focus on the Windows operating system. <br>&emsp;&emsp;&emsp;&emsp;Why do I have a personal website?<br>&emsp;&emsp;&emsp;&emsp; To showcase my skills, projects, and interesting research. <br>&emsp;&emsp;&emsp;&emsp;Why Windows specifically?<br>&emsp;&emsp;&emsp;&emsp; Well... Linux is mostly a server/networking OS, macOS is too expensive, so Windows it is. <br>&emsp;&emsp;&emsp;&emsp;Why "MechanicX86"?<br>&emsp;&emsp;&emsp;&emsp; "Mechanic" because I love taking apart and understanding large, complex systems — like an operating system. And "x86" is just a little easter egg referencing the processor architecture. Hope that made things a bit clearer :></p>
         </main>
         
         </div>
